@@ -10,15 +10,41 @@ ms.service: azure-powershell
 ms.devlang: powershell
 ms.topic: conceptual
 ms.date: 05/15/2017
-ms.openlocfilehash: 368404bcb5218814b4965bb1bcda1e2876441d2a
-ms.sourcegitcommit: 226527be7cb647acfe2ea9ab151185053ab3c6db
+ms.openlocfilehash: 9cee582f74b7f3260c6ae167a8ac358d360ad8ab
+ms.sourcegitcommit: 45587b5091293288e16cfae8ac412e0d42f8f450
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/29/2017
+ms.lasthandoff: 08/15/2017
 ---
 # <a name="other-installation-methods"></a>Inne metody instalacji
 
 Program Azure PowerShell można zainstalować na wiele sposobów. Preferowaną metodą jest użycie modułu PowerShellGet z galerią programu PowerShell. Program Azure PowerShell można zainstalować za pomocą Instalatora platformy sieci Web (WebPI) lub pliku MSI dostępnego w witrynie [GitHub](https://github.com/Azure/azure-powershell/releases/latest).
+
+## <a name="docker"></a>Docker
+
+Utrzymujemy obraz Docker wstępnie skonfigurowany z programem Azure PowerShell.
+
+Uruchom kontener za pomocą polecenia `docker run`.
+
+```powershell
+docker run azuresdk/azure-powershell
+```
+
+Ponadto utrzymujemy podzestaw poleceń cmdlet jako kontener programu PowerShell Core.
+
+Dla systemu Mac/Linux użyj obrazu `latest`.
+
+```bash
+docker run azuresdk/azure-powershell-core:latest
+```
+
+Dla systemu Windows użyj obrazu `nanoserver`.
+
+```powershell
+docker run azuresdk/azure-powershell-core:nanoserver
+```
+
+Program Azure PowerShell jest instalowany w obrazie za pośrednictwem polecenia `Install-Module` z [galerii programu PowerShell](https://www.powershellgallery.com/).
 
 ## <a name="install-using-the-web-platform-installer"></a>Instalowanie za pomocą Instalatora platformy sieci Web
 
