@@ -17,13 +17,11 @@ ms.translationtype: HT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 06/29/2017
 ---
-# <span data-ttu-id="2b41a-103">Informacje o wersji</span><span class="sxs-lookup"><span data-stu-id="2b41a-103">Release notes</span></span>
-<a id="release-notes" class="xliff"></a>
+# <a name="release-notes"></a><span data-ttu-id="2b41a-103">Informacje o wersji</span><span class="sxs-lookup"><span data-stu-id="2b41a-103">Release notes</span></span>
 
 <span data-ttu-id="2b41a-104">To jest lista zmian wprowadzonych w programie Azure PowerShell w tym wydaniu.</span><span class="sxs-lookup"><span data-stu-id="2b41a-104">This is a list of changes made to Azure PowerShell in this release.</span></span>
 
-## <span data-ttu-id="2b41a-105">Wersja 1.7.0</span><span class="sxs-lookup"><span data-stu-id="2b41a-105">Version 1.7.0</span></span>
-<a id="version-170" class="xliff"></a>
+## <a name="version-170"></a><span data-ttu-id="2b41a-105">Wersja 1.7.0</span><span class="sxs-lookup"><span data-stu-id="2b41a-105">Version 1.7.0</span></span>
 
 * <span data-ttu-id="2b41a-106">**Zmiana działania parametrów -Force, -Confirm i $ConfirmPreference dla wszystkich poleceń cmdlet. Zmieniamy tę implementację, aby była zgodna z wytycznymi programu PowerShell. W przypadku większości poleceń cmdlet oznacza to usunięcie parametru Force, zaś aby pominąć monit ShouldProcess, użytkownicy będą musieli dodać parametr: „-Confirm:$false” w swoich skryptach programu PowerShell.**</span><span class="sxs-lookup"><span data-stu-id="2b41a-106">**Behavioral change for -Force, –Confirm and $ConfirmPreference parameters for all cmdlets. We are changing this implementation to be in line with PowerShell guidelines. For most cmdlets, this means removing the Force parameter and to skip the ShouldProcess prompt, users will need to include the parameter: ‘-Confirm:$false’ in their PowerShell scripts.**</span></span> <span data-ttu-id="2b41a-107">Te zmiany rozwiązują następujące problemy:</span><span class="sxs-lookup"><span data-stu-id="2b41a-107">This changes are addressing following issues:</span></span>
   - <span data-ttu-id="2b41a-108">Poprawnej implementacji funkcjonalności -WhatIf, pozwalając użytkownikom na ustalenie efektów polecenia cmdlet lub skryptu bez wprowadzania żadnych rzeczywistych zmian</span><span class="sxs-lookup"><span data-stu-id="2b41a-108">Correct implementation of –WhatIf functionality, allowing a user to determine the effects of a cmdlet or script without making any actual changes</span></span>

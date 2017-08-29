@@ -17,13 +17,11 @@ ms.translationtype: HT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 06/29/2017
 ---
-# <span data-ttu-id="57587-103">Informacje o wersji</span><span class="sxs-lookup"><span data-stu-id="57587-103">Release notes</span></span>
-<a id="release-notes" class="xliff"></a>
+# <a name="release-notes"></a><span data-ttu-id="57587-103">Informacje o wersji</span><span class="sxs-lookup"><span data-stu-id="57587-103">Release notes</span></span>
 
 <span data-ttu-id="57587-104">To jest lista zmian wprowadzonych w programie Azure PowerShell w tym wydaniu.</span><span class="sxs-lookup"><span data-stu-id="57587-104">This is a list of changes made to Azure PowerShell in this release.</span></span>
 
-## <span data-ttu-id="57587-105">Wersja 2.2.0</span><span class="sxs-lookup"><span data-stu-id="57587-105">Version 2.2.0</span></span>
-<a id="version-220" class="xliff"></a>
+## <a name="version-220"></a><span data-ttu-id="57587-105">Wersja 2.2.0</span><span class="sxs-lookup"><span data-stu-id="57587-105">Version 2.2.0</span></span>
 * <span data-ttu-id="57587-106">Compute</span><span class="sxs-lookup"><span data-stu-id="57587-106">Compute</span></span>
   - <span data-ttu-id="57587-107">Dodano obsługę pytania o stan szyfrowania z rozszerzenia AzureDiskEncryptionForLinux</span><span class="sxs-lookup"><span data-stu-id="57587-107">Add support for querying encryption status from the AzureDiskEncryptionForLinux extension</span></span>
 * <span data-ttu-id="57587-108">DataFactory</span><span class="sxs-lookup"><span data-stu-id="57587-108">DataFactory</span></span>

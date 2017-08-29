@@ -1,6 +1,6 @@
 ---
-title: "<span data-ttu-id=\"a587f-101\">Wykonywanie zapytań dotyczących zasobów platformy Azure i formatowanie wyników | Microsoft Docs</span><span class=\"sxs-lookup\"><span data-stu-id=\"a587f-101\">Querying for Azure resources and formatting results | Microsoft Docs</span></span>"
-description: "<span data-ttu-id=\"a587f-102\">Jak wykonać zapytanie dotyczące zasobów platformy Azure i sformatować wyniki.</span><span class=\"sxs-lookup\"><span data-stu-id=\"a587f-102\">How to query for resources in Azure and format the results.</span></span>"
+title: "Wykonywanie zapytań dotyczących zasobów platformy Azure i formatowanie wyników | Microsoft Docs"
+description: "Jak wykonać zapytanie dotyczące zasobów platformy Azure i sformatować wyniki."
 services: azure
 author: sdwheeler
 ms.author: sewhee
@@ -16,14 +16,12 @@ ms.translationtype: HT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 06/29/2017
 ---
-# <span data-ttu-id="a587f-103">Wykonywanie zapytań dotyczących zasobów platformy Azure</span><span class="sxs-lookup"><span data-stu-id="a587f-103">Querying for Azure resources</span></span>
-<a id="querying-for-azure-resources" class="xliff"></a>
+# <a name="querying-for-azure-resources"></a><span data-ttu-id="a587f-103">Wykonywanie zapytań dotyczących zasobów platformy Azure</span><span class="sxs-lookup"><span data-stu-id="a587f-103">Querying for Azure resources</span></span>
 
 <span data-ttu-id="a587f-104">W programie PowerShell można wykonywać zapytania przy użyciu wbudowanych poleceń cmdlet.</span><span class="sxs-lookup"><span data-stu-id="a587f-104">Querying in PowerShell can be completed by using built-in cmdlets.</span></span> <span data-ttu-id="a587f-105">W programie PowerShell nazwy poleceń cmdlet mają postać **_czasownik-rzeczownik_**.</span><span class="sxs-lookup"><span data-stu-id="a587f-105">In PowerShell, cmdlet names take the form of **_Verb-Noun_**.</span></span> <span data-ttu-id="a587f-106">Polecenia cmdlet z czasownikiem **_Get_** służą do tworzenia zapytań.</span><span class="sxs-lookup"><span data-stu-id="a587f-106">The cmdlets using the verb **_Get_** are the query cmdlets.</span></span> <span data-ttu-id="a587f-107">Rzeczowniki w poleceniach cmdlet to typy zasobów platformy Azure, na których działają czasowniki.</span><span class="sxs-lookup"><span data-stu-id="a587f-107">The cmdlet nouns are the types of Azure resources that are acted upon by the cmdlet verbs.</span></span>
 
 
-## <span data-ttu-id="a587f-108">Wybieranie prostych właściwości</span><span class="sxs-lookup"><span data-stu-id="a587f-108">Selecting simple properties</span></span>
-<a id="selecting-simple-properties" class="xliff"></a>
+## <a name="selecting-simple-properties"></a><span data-ttu-id="a587f-108">Wybieranie prostych właściwości</span><span class="sxs-lookup"><span data-stu-id="a587f-108">Selecting simple properties</span></span>
 
 <span data-ttu-id="a587f-109">Każde polecenie cmdlet programu Azure PowerShell ma zdefiniowane formatowanie domyślne.</span><span class="sxs-lookup"><span data-stu-id="a587f-109">Azure PowerShell has default formatting defined for each cmdlet.</span></span> <span data-ttu-id="a587f-110">Najbardziej typowe właściwości każdego typu zasobu są automatycznie wyświetlane w formacie tabeli lub listy.</span><span class="sxs-lookup"><span data-stu-id="a587f-110">The most common properties for each resource type are displayed in a table or list format automatically.</span></span> <span data-ttu-id="a587f-111">Aby uzyskać więcej informacji na temat formatowania danych wyjściowych, zobacz [Formatowanie wyników zapytania](formatting-output.md).</span><span class="sxs-lookup"><span data-stu-id="a587f-111">For more information about formatting output, see [Formatting query results](formatting-output.md).</span></span>
 
@@ -55,8 +53,7 @@ MyUnbuntu1610 MYWESTEURG        westeurope
 MyWin2016VM   MYWESTEURG        westeurope
 ```
 
-## <span data-ttu-id="a587f-115">Wybieranie złożonych zagnieżdżonych właściwości</span><span class="sxs-lookup"><span data-stu-id="a587f-115">Selecting complex nested properties</span></span>
-<a id="selecting-complex-nested-properties" class="xliff"></a>
+## <a name="selecting-complex-nested-properties"></a><span data-ttu-id="a587f-115">Wybieranie złożonych zagnieżdżonych właściwości</span><span class="sxs-lookup"><span data-stu-id="a587f-115">Selecting complex nested properties</span></span>
 
 <span data-ttu-id="a587f-116">Jeśli właściwość, którą chcesz wybrać, jest zagnieżdżona głęboko w danych wyjściowych JSON, musisz podać pełną ścieżkę do niej.</span><span class="sxs-lookup"><span data-stu-id="a587f-116">If the property you want to select is nested deep in the JSON output you need to supply the full path to that nested property.</span></span> <span data-ttu-id="a587f-117">W poniższym przykładzie pokazano, jak wybrać nazwę maszyny wirtualnej i typ systemu operacyjnego z polecenia cmdlet `Get-AzureRmVM`.</span><span class="sxs-lookup"><span data-stu-id="a587f-117">The following example shows how to select the VM Name and the OS type from the `Get-AzureRmVM` cmdlet.</span></span>
 
@@ -71,8 +68,7 @@ MyUnbuntu1610   Linux
 MyWin2016VM   Windows
 ```
 
-## <span data-ttu-id="a587f-118">Filtrowanie wyników za pomocą polecenia cmdlet Where-Object</span><span class="sxs-lookup"><span data-stu-id="a587f-118">Filter result using the Where-Object cmdlet</span></span>
-<a id="filter-result-using-the-where-object-cmdlet" class="xliff"></a>
+## <a name="filter-result-using-the-where-object-cmdlet"></a><span data-ttu-id="a587f-118">Filtrowanie wyników za pomocą polecenia cmdlet Where-Object</span><span class="sxs-lookup"><span data-stu-id="a587f-118">Filter result using the Where-Object cmdlet</span></span>
 
 <span data-ttu-id="a587f-119">Polecenie cmdlet `Where-Object` pozwala filtrować wyniki na podstawie dowolnej wartości właściwości.</span><span class="sxs-lookup"><span data-stu-id="a587f-119">The `Where-Object` cmdlet allows you to filter the result based on any property value.</span></span> <span data-ttu-id="a587f-120">Poniższy filtr wybiera tylko te maszyny wirtualne, których nazwy zawierają tekst „RGD”.</span><span class="sxs-lookup"><span data-stu-id="a587f-120">In the following example, the filter selects only VMs that have the text "RGD" in their name.</span></span>
 
