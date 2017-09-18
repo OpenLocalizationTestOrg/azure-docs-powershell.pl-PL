@@ -1,9 +1,14 @@
 # [Azure PowerShell](../overview.md)
+
 ## [Instalowanie](../install-azurerm-ps.md)
+### [Instalowanie w systemach macOS i Linux](../install-azurermps-maclinux.md)
 ### [Inne metody instalacji](../other-install.md)
+
 ## [Wprowadzenie](../get-started-azureps.md)
+
 ## [Zaloguj się](../authenticate-azureps.md)
 ### [Tworzenie jednostki usługi](../create-azure-service-principal-azureps.md)
+
 ## [Zapytania](../queries-azureps.md)
 ## [Formatowanie](../formatting-output.md)
 ## [Subskrypcje](../manage-subscriptions-azureps.md)
