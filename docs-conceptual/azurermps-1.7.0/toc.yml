@@ -1,0 +1,43 @@
+- name: Azure PowerShell
+  href: overview.md
+  items:
+    - name: Instalowanie
+      href: install-azurerm-ps.md
+      items:
+        - name: Inne metody instalacji
+          href: other-install.md
+    - name: Rozpoczęcie pracy
+      href: get-started-azureps.md
+    - name: Logowanie
+      href: authenticate-azureps.md
+      items:
+        - name: Tworzenie jednostki usługi
+          href: create-azure-service-principal-azureps.md
+    - name: Zapytania
+      href: queries-azureps.md
+    - name: Formatowanie
+      href: formatting-output.md
+    - name: Subskrypcje
+      href: manage-subscriptions-azureps.md
+    - name: Wdrażanie
+      items:
+        - name: Wdrażanie przy użyciu szablonów usługi Resource Manager
+          href: 'https://docs.microsoft.com/en-us/azure/azure-resource-manager/resource-group-template-deploy'
+        - name: Eksportowanie szablonów usługi Resource Manager
+          href: 'https://docs.microsoft.com/en-us/azure/azure-resource-manager/resource-manager-export-template-powershell'
+        - name: Wdrażanie prywatnego szablonu usługi Resource Manager przy użyciu tokenu sygnatury dostępu współdzielonego
+          href: 'https://docs.microsoft.com/en-us/azure/azure-resource-manager/resource-manager-powershell-sas-token'
+    - name: Informacje o wersji
+      href: release-notes-azureps.md
+- name: Przykładowe skrypty
+  items:
+    - name: Maszyny wirtualne z systemem Linux
+      href: 'https://docs.microsoft.com/en-us/azure/virtual-machines/linux/powershell-samples?toc=%2fpowershell%2fmodule%2ftoc.json'
+    - name: Maszyny wirtualne z systemem Windows
+      href: 'https://docs.microsoft.com/en-us/azure/virtual-machines/windows/powershell-samples?toc=%2fpowershell%2fmodule%2ftoc.json'
+    - name: Web Apps
+      href: 'https://docs.microsoft.com/azure/app-service-web/app-service-powershell-samples?toc=%2fpowershell%2fmodule%2ftoc.json'
+    - name: Bazy danych SQL
+      href: 'https://docs.microsoft.com/azure/sql-database/sql-database-powershell-samples?toc=%2fpowershell%2fmodule%2ftoc.json'
+    - name: Cosmos DB
+      href: 'https://docs.microsoft.com/azure/cosmos-db/powershell-samples?toc=%2fpowershell%2fmodules%2ftoc.json'
