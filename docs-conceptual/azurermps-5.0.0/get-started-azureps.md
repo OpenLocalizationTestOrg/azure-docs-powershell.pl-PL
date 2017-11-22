@@ -1,20 +1,4 @@
----
-title: Rozpoczynanie pracy z programem Azure PowerShell | Microsoft Docs
-description: 
-services: azure
-author: sdwheeler
-ms.author: sewhee
-manager: carmonm
-ms.product: azure
-ms.service: azure-powershell
-ms.devlang: powershell
-ms.topic: get-started-article
-ms.date: 08/31/2017
-ms.openlocfilehash: 2cd3fc8e955ae826471dceee79d5e6b70070d416
-ms.sourcegitcommit: b256bf48e15ee98865de0fae50e7b81878b03a54
-ms.translationtype: HT
-ms.contentlocale: pl-PL
-ms.lasthandoff: 11/03/2017
+-- tytuł: Rozpoczynanie pracy z programem Azure PowerShell | Microsoft Docs opis: usługi: autor azure: sdwheeler ms.author: sewhee menedżer: carmonm ms.product: azure ms.service: azure-powershell ms.devlang: powershell ms.topic: get-started-article ms.date: 08/31/2017
 ---
 # <a name="getting-started-with-azure-powershell"></a>Rozpoczynanie pracy z programem Azure PowerShell
 
@@ -26,15 +10,15 @@ Najprostszym sposobem na rozpoczęcie pracy jest [uruchomienie usługi Cloud She
 
 1. Uruchom usługę Cloud Shell z górnego obszaru nawigacyjnego witryny Azure Portal.
 
-   ![Ikona powłoki](~/media/get-started-azureps/shell-icon.png)
+   ![Ikona powłoki](/media/get-started-azureps/shell-icon.png)
 
 2. Wybierz subskrypcję, której chcesz użyć, a następnie utwórz konto magazynu.
 
-   ![Tworzenie konta magazynu](~/media/get-started-azureps/storage-prompt.png)
+   ![Tworzenie konta magazynu](/media/get-started-azureps/storage-prompt.png)
 
 Po utworzeniu magazynu usługa Cloud Shell otworzy sesję programu PowerShell w przeglądarce.
 
-![Usługa Cloud Shell dla programu PowerShell](~/media/get-started-azureps/cloud-powershell.png)
+![Usługa Cloud Shell dla programu PowerShell](/media/get-started-azureps/cloud-powershell.png)
 
 Program Azure PowerShell można również zainstalować i używać lokalnie w sesji programu PowerShell.
 
