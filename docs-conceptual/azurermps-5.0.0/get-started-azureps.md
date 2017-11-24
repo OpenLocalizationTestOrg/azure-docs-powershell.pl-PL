@@ -1,4 +1,4 @@
--- tytuł: Rozpoczynanie pracy z programem Azure PowerShell | Microsoft Docs opis: usługi: autor azure: sdwheeler ms.author: sewhee menedżer: carmonm ms.product: azure ms.service: azure-powershell ms.devlang: powershell ms.topic: get-started-article ms.date: 08/31/2017
+-- tytuł: Rozpoczynanie pracy z programem Azure PowerShell | Microsoft Docs opis: usługi: autor azure: sdwheeler ms.author: sewhee menedżer: carmonm ms.product: azure ms.service: azure-powershell ms.devlang: powershell ms.topic: get-started-article ms.date: 2017-11-15
 ---
 # <a name="getting-started-with-azure-powershell"></a>Rozpoczynanie pracy z programem Azure PowerShell
 
@@ -28,7 +28,7 @@ Pierwszym krokiem jest upewnienie się, że jest zainstalowana najnowsza wersja 
 
 1. [Zainstalowanie programu Azure PowerShell](install-azurerm-ps.md).
 
-2. Aby sprawdzić, czy instalacja się powiodła, uruchom polecenie `Get-Module AzureRM` w wierszu polecenia.
+2. Aby sprawdzić, czy instalacja się powiodła, uruchom polecenie `Get-Module AzureRM -ListAvailable` w wierszu polecenia.
 
 ## <a name="log-in-to-azure"></a>Zaloguj się do platformy Azure.
 
