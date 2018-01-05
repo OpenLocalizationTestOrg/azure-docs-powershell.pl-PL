@@ -37,6 +37,8 @@
       items:
         - name: Korzystanie z modułów eksperymentalnych
           href: using-experimental-modules.md
+        - name: Równoczesne uruchamianie poleceń cmdlet przy użyciu zadań programu PowerShell
+          href: using-psjobs.md
     - name: Informacje o wersji
       href: release-notes-azureps.md
 - name: Przykładowe skrypty
