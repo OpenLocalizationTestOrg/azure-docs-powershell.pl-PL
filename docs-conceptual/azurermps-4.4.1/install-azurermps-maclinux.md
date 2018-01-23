@@ -9,41 +9,39 @@ ms.product: azure
 ms.service: azure-powershell
 ms.devlang: powershell
 ms.topic: conceptual
-ms.date: 09/06/2017
-ms.openlocfilehash: 94b39c18acaca7a4b17b5207feed025442665acc
-ms.sourcegitcommit: c42c7176276ec4e1cc3360a93e6b15d32083bf9f
+ms.date: 01/12/2018
+ms.openlocfilehash: 64a86dfd4af7f3f0a91501e9a096ff190f7100cb
+ms.sourcegitcommit: d320fd5a2f468445c9e5aaa8d28dc363ece12ffc
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/14/2017
+ms.lasthandoff: 01/16/2018
 ---
 # <a name="install-and-configure-azure-powershell-on-macos-and-linux"></a>Instalowanie i konfigurowanie programu Azure PowerShell w systemach macOS i Linux
 
-Teraz jest możliwa instalacja programów PowerShell 6 (beta) i Azure PowerShell na platformach innych niż Windows.
-Proces instalowania programu Azure PowerShell w systemach macOS i Linux nie różni się zbytnio od instalowania w systemie Windows, należy jednak najpierw zainstalować program PowerShell 6 (beta).
+Teraz jest możliwa instalacja programów PowerShell Core w wersji 6 i Azure PowerShell na platformach innych niż Windows.
+Proces instalowania programu Azure PowerShell w systemach macOS i Linux nie różni się zbytnio od instalowania w systemie Windows, należy jednak najpierw zainstalować program PowerShell Core w wersji 6.
 
 > [!NOTE]
 
-> W tej chwili oba programy, PowerShell 6 (beta) i Azure PowerShell for .NET Core, są wciąż w wersji beta.
+> W tej chwili oba programy, PowerShell Core w wersji 6 i Azure PowerShell for .NET Core, są wciąż w wersji beta.
 > Wsparcie dla tych produktów jest ograniczone. Jeśli napotkasz problemy lub odkryjesz usterkę, zarejestruj problemy w witrynie GitHub.
 >
-> * [Problemy z programem PowerShell 6 (beta)](https://github.com/PowerShell/PowerShell/issues)
+> * [Problemy z programem PowerShell Core w wersji 6](https://github.com/PowerShell/PowerShell/issues)
 > * [Problemy z programem Azure PowerShell](https://github.com/azure/azure-docs-powershell/issues)
 
-## <a name="step-1-install-powershell-6-beta"></a>Step 1. Instalowanie programu PowerShell 6 (beta)
+## <a name="step-1-install-powershell-core-v6"></a>Krok 1. Instalowanie programu PowerShell Core w wersji 6
 
-Proces instalowania programu PowerShell 6 (beta) różni się zależnie od docelowego systemu operacyjnego.
-Chociaż istnieje możliwość zainstalowania programu PowerShell 6 (beta) w systemie Windows, ten artykuł koncentruje się na systemach macOS i Linux. Jeśli chcesz korzystać z programu Azure PowerShell w systemie Windows, zobacz artykuł poświęcony [instalacji](./install-azurerm-ps.md) w systemie Windows.
+Proces instalowania programu PowerShell Core w wersji 6 różni się zależnie od docelowego systemu operacyjnego.
+Chociaż istnieje możliwość zainstalowania programu PowerShell Core w wersji 6 w systemie Windows, ten artykuł koncentruje się na systemach macOS i Linux. Jeśli chcesz korzystać z programu Azure PowerShell w systemie Windows, zobacz artykuł poświęcony [instalacji](./install-azurerm-ps.md) w systemie Windows.
 
-Aby zainstalować program **PowerShell 6** (beta) w systemie Linux lub macOS, konieczne jest:
+Proces instalowania programu **PowerShell Core w wersji 6** w systemie Linux lub macOS różni się zależnie od dystrybucji systemu Linux i wersji systemu operacyjnego.
+Szczegółowe instrukcje można znaleźć w następującym artykule:
 
-1. Uzyskanie programu PowerShell dla konkretnego systemu operacyjnego i jego wersji z witryny [GitHub](https://github.com/powershell/powershell#get-powershell)
-2. Wykonanie instrukcji instalacji
-   - [Linux](https://github.com/PowerShell/PowerShell/blob/master/docs/installation/linux.md)
-   - [macOS](https://github.com/PowerShell/PowerShell/blob/master/docs/installation/linux.md#macos-1012)
+- [Instalowanie programu PowerShell Core w systemach macOS i Linux](/powershell/scripting/setup/installing-powershell-core-on-macos-and-linux)
 
 ## <a name="step-2-install-azure-powershell-for-net-core"></a>Krok 2. Instalowanie programu Azure PowerShell dla platformy .NET Core
 
-Program PowerShell 6 (beta) jest dostarczany z już zainstalowanym modułem PowerShellGet. Ułatwia to instalację modułów opublikowanych w galerii programu PowerShell. Aby zainstalować program Azure PowerShell, otwórz nową sesję programu PowerShell i uruchom następujące polecenie:
+Program PowerShell Core w wersji 6 jest dostarczany z już zainstalowanym modułem PowerShellGet. Ułatwia to instalację modułów opublikowanych w galerii programu PowerShell. Aby zainstalować program Azure PowerShell, otwórz nową sesję programu PowerShell i uruchom następujące polecenie:
 
 ```powershell
 Install-Module AzureRM.NetCore
@@ -55,6 +53,7 @@ Gdy moduł jest zainstalowany, musisz załadować moduł do swojej sesji program
 
 ```powershell
 Import-Module AzureRM.Netcore
+Import-Module AzureRM.Profile.Netcore
 ```
 
 Po zakończeniu importowania można przetestować nowo zainstalowany moduł, próbując zalogować się do platformy Azure przy użyciu następującego polecenia:
