@@ -10,11 +10,11 @@ ms.service: azure-powershell
 ms.devlang: powershell
 ms.topic: conceptual
 ms.date: 12/11/2017
-ms.openlocfilehash: 0a445a7db84c8deb6518b826b4096983669c5961
-ms.sourcegitcommit: 15bf69bf95eceb936b3a429e741add95c308826a
+ms.openlocfilehash: dfc1efa752c9c9fa42ad5904adacd83c2dc333b8
+ms.sourcegitcommit: 8376e0bc5f862d382d7283ba72990e3707591e7b
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/28/2018
+ms.lasthandoff: 03/30/2018
 ---
 # <a name="running-cmdlets-in-parallel-using-powershell-jobs"></a>Równoczesne uruchamianie poleceń cmdlet przy użyciu zadań programu PowerShell
 
@@ -23,7 +23,7 @@ Program Azure PowerShell w znacznej mierze zależy od wykonywania wywołań siec
 
 ## <a name="context-persistence-and-psjobs"></a>Stan trwały kontekstu i zadania PSJob
 
-Zadania PSJob są uruchamiane w ramach osobnych procesów, co oznacza, że informacje o połączeniu z platformą Azure muszą zostać prawidłowo udostępnione tworzonym zadaniom. Po połączeniu konta platformy Azure z sesją programu PowerShell przy użyciu polecenia `Login-AzureRmAccount` można przekazać kontekst do zadania.
+Zadania PSJob są uruchamiane w ramach osobnych procesów, co oznacza, że informacje o połączeniu z platformą Azure muszą zostać prawidłowo udostępnione tworzonym zadaniom. Po połączeniu konta platformy Azure z sesją programu PowerShell przy użyciu polecenia `Connect-AzureRmAccount` można przekazać kontekst do zadania.
 
 ```powershell
 $creds = Get-Credential
